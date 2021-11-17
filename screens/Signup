@@ -1,0 +1,11 @@
+import React from "react";
+import {View} from "react-native";
+
+export default function Signup(){
+    return(
+      <View style={{flex:1,alignment:"center"}}>
+    <Text style={{color:'black',fontWeight:300}}> Fill in the form to create ab account</Text>
+    </View>
+    );
+    
+}

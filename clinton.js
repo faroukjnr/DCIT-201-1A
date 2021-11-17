@@ -5,7 +5,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator}from'@react-navigation/native-stack';
 import login from "./screens/login";
 import Home from "./screens/Home";
-import { ProductDetails } from './screens/productDetails';
 export default function App() {
   const MainNavigator= createNativeStackNavigator();
   return (
@@ -14,6 +13,8 @@ export default function App() {
     <MainNavigator.Navigator screenOptions={{headerShown:"false"}}initialRouteName="login">
     <MainNavigator.Screen name="login" component={login}/>
     <MainNavigator.Screen name="Home" component={Home}/>
+    
+    
     </MainNavigator.Navigator>
     </NavigationContainer>
       
@@ -21,8 +22,7 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
+const styles = StyleSheet.create({  container: {
     flex: 1,
   },
 });
